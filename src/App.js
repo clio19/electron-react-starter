@@ -5,10 +5,15 @@ function App() {
   return (
     <div>
       <h1>Home page</h1>
-      <Link to="/profile">Go back to profile</Link>
-      <div>
-        <img src="https://www.bestsadstatus.com/wp-content/uploads/2019/09/whatsapp-dp-for-girls-6.jpg"></img>
-      </div>
+      <ul>
+        <li>
+          <Link to="/profile">Go back to profile</Link>
+        </li>
+        <li>
+          <Link to="/jobs">JobsList</Link>
+        </li>
+      </ul>
+      <div>HIOME </div>
     </div>
   );
 }
