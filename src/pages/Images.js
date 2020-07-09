@@ -20,8 +20,8 @@ export default class Profile extends React.Component {
       });
   }
 
-  showImage = () => {
-    ipcRenderer.send('toggle-image');
+  showImage = (image) => {
+    ipcRenderer.send('toggle-image', image);
   };
   render() {
     return (
@@ -34,7 +34,7 @@ export default class Profile extends React.Component {
               <li
                 className="list-group-item"
                 onClick={() => {
-                  this.showImage();
+                  this.showImage(image.url);
                 }}
               >
                 {image.title}
